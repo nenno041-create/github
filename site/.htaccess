@@ -1,0 +1,3 @@
+# Static Olivia website on Apache hosting.
+DirectoryIndex index.html
+Options -Indexes

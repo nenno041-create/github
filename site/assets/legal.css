@@ -1,0 +1,53 @@
+/* Documents share Olivia's colours and typography, with room for long text. */
+.legal-header{border-bottom:1px solid var(--line);background:var(--cream)}
+.legal-header-inner{display:flex;justify-content:space-between;align-items:center;gap:22px;min-height:108px}
+.legal-header .brand img{width:66px;height:56px}
+.legal-home{white-space:nowrap}
+.legal-main{max-width:1040px;padding-top:58px;padding-bottom:74px;font-size:15px;line-height:1.85}
+.legal-title-row{display:flex;align-items:center;gap:24px;justify-content:space-between}
+.legal-title-row h1{font-family:var(--serif);font-size:clamp(29px,4.5vw,48px);line-height:1.2;font-weight:600;letter-spacing:-.035em;margin:12px 0 18px;max-width:850px}
+.legal-title-row>img{flex:none;margin-right:8px}
+.legal-intro{color:var(--muted);max-width:780px;font-size:16px;line-height:1.8}
+.legal-version{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:20px}
+.legal-print{color:var(--green);font:inherit;padding:4px 0;border:0;background:none;text-decoration:underline;text-underline-offset:4px}
+.legal-nav{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 38px;padding-bottom:26px;border-bottom:1px solid var(--line)}
+.legal-nav a{border:1px solid var(--line);padding:8px 15px;border-radius:24px;font-size:12px;color:var(--green);background:var(--paper)}
+.legal-nav a[aria-current=page]{background:var(--green);border-color:var(--green);color:var(--cream)}
+.legal-nav a:hover{border-color:var(--green)}
+.legal-section{margin:36px 0;scroll-margin-top:26px}
+.legal-section h2{font-family:var(--serif);font-size:23px;line-height:1.45;letter-spacing:-.02em;margin-bottom:15px;color:var(--green);font-weight:500}
+.legal-section p{margin:12px 0}
+.legal-section a,.legal-footer a{color:var(--green);text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.legal-details{border:1px solid var(--line);border-radius:19px;overflow:hidden;background:var(--paper)}
+.legal-details>div{display:grid;grid-template-columns:225px 1fr;gap:24px;padding:16px 22px;border-bottom:1px solid var(--line)}
+.legal-details>div:last-child{border:0}
+.legal-details dt{color:var(--muted);font-size:13px}
+.legal-details dd{margin:0;overflow-wrap:anywhere;font-size:14px;font-weight:500}
+.legal-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:17px;background:var(--paper)}
+.legal-table{border-collapse:collapse;width:100%;text-align:left;font-size:13px;line-height:1.75}
+.legal-table caption{text-align:left;font-weight:600;color:var(--green);padding:15px 18px}
+.legal-table th,.legal-table td{vertical-align:top;border-top:1px solid var(--line);padding:14px 18px}
+.legal-table thead th{background:var(--sage);font-weight:600}
+.legal-table tbody th{font-weight:500;width:28%;color:var(--green)}
+.legal-price-table{border:1px solid var(--line);background:var(--paper)}
+.legal-price-table th:first-child{width:65%}
+.legal-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.legal-card{display:block;padding:24px 26px;background:var(--paper);border:1px solid var(--line);border-radius:23px;transition:border-color .2s}
+.legal-card:hover,.legal-card:focus-visible{border-color:var(--green)}
+.legal-card-number{color:var(--orange);font-size:12px;font-weight:600;letter-spacing:.08em}
+.legal-card h2{font-family:var(--serif);font-size:22px;font-weight:500;line-height:1.45;color:var(--green);margin:12px 0}
+.legal-card p{color:var(--muted);font-size:13px;line-height:1.75}
+.legal-consent-text{border-left:2px solid var(--green);padding:4px 24px;background:var(--paper);border-radius:0 18px 18px 0}
+.legal-footer{background:var(--sand);border-top:1px solid var(--line);padding:30px 0;color:var(--green);font-size:12px;line-height:1.9}
+.legal-footer p{margin:4px 0}
+.legal-copy-status{min-height:1.8em;font-size:12px;color:var(--green)}
+.footer-legal{position:relative;z-index:1;margin-top:33px;padding-top:24px;border-top:1px solid #fff4dc40;font-size:11px;line-height:1.85}
+.footer-legal p{max-width:760px;margin:6px 0;color:var(--cream)}
+.footer-legal nav{display:flex;flex-wrap:wrap;gap:8px 22px;margin-bottom:17px}
+.footer-legal a{color:var(--cream);text-decoration:underline;text-underline-offset:4px}
+.contact-email{font-size:15px;font-weight:500;margin:12px 0;color:var(--green);overflow-wrap:anywhere}
+.contact-email a:hover{text-decoration:underline;text-underline-offset:4px}
+.booking-privacy{border-top:1px solid var(--line);padding-top:14px;margin-top:17px;color:var(--muted);font-size:11px;line-height:1.8}
+.booking-privacy a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:600px){.legal-header-inner{min-height:90px;gap:15px}.legal-header .brand img{width:46px;height:42px}.legal-header .brand-type strong{font-size:23px}.legal-header .brand-type>span{font-size:6px}.legal-home{font-size:10px;gap:5px}.legal-home .arrow-icon{width:18px;height:18px}.legal-main{padding-top:32px;padding-bottom:40px;font-size:14px;line-height:1.9}.legal-title-row>img{width:29px;height:32px;margin-right:0}.legal-title-row{gap:12px}.legal-intro{font-size:14px}.legal-version{font-size:10px;gap:12px}.legal-nav{gap:6px;margin:24px 0 30px}.legal-nav a{font-size:10px;padding:7px 12px}.legal-section h2{font-size:20px}.legal-section{margin:30px 0}.legal-details>div{grid-template-columns:1fr;gap:4px;padding:14px 17px}.legal-details dt{font-size:11px}.legal-details dd{font-size:13px}.legal-table-wrap .legal-table{min-width:540px}.legal-table th,.legal-table td{padding:11px 14px}.legal-card-grid{grid-template-columns:1fr;gap:12px}.legal-card{padding:20px 22px}.legal-card h2{font-size:20px}.legal-consent-text{padding:3px 18px}.footer-legal{font-size:10px;margin-top:30px;padding-top:21px}.footer-legal nav{gap:8px 16px}.contact-email{font-size:13px}.booking-privacy{font-size:10px;line-height:1.8}}
+@media print{.legal-header,.legal-nav,.legal-footer,.legal-print,[data-copy],.legal-copy-status{display:none!important}.legal-page{background:#fff;color:#111}.legal-main{max-width:none;padding:0;font-family:Arial,sans-serif;font-size:11pt;line-height:1.5}.legal-title-row h1{font-size:22pt}.legal-section h2{font-size:15pt}.legal-section{break-inside:auto;margin:18pt 0}.legal-details>div{break-inside:avoid}.legal-table-wrap{overflow:visible}.legal-table-wrap .legal-table{min-width:0}.legal-section a{color:#111}.legal-title-row>img{display:none}.legal-card{break-inside:avoid}body{overflow:visible}}

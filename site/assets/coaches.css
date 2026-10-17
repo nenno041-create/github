@@ -1,0 +1,216 @@
+/* The club leaders: the original portrait and the owner's stated achievements. */
+.coaches-section {
+  position: relative;
+  border-top: 1px solid var(--line);
+  background: var(--cream);
+}
+
+.coaches-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  align-items: start;
+  gap: clamp(36px, 7vw, 90px);
+}
+
+.coaches-heading {
+  padding-top: 34px;
+}
+
+.coaches-heading h2 {
+  font-size: clamp(36px, 3.6vw, 46px);
+  line-height: 1.2;
+}
+
+.coaches-heading h2 em {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 1.55em;
+}
+
+.coaches-signature {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 38px;
+  color: var(--green);
+}
+
+.coaches-signature img {
+  width: 62px;
+  height: 86px;
+  flex: none;
+  transform: rotate(20deg);
+}
+
+.coaches-signature span {
+  max-width: 230px;
+  font-family: var(--script);
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.coaches-profile {
+  width: 100%;
+  max-width: 560px;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+.coaches-portrait {
+  position: relative;
+  isolation: isolate;
+}
+
+.coaches-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 58%;
+  border-radius: 110px 30px 80px 30px;
+  background: var(--sand);
+}
+
+.coaches-heart {
+  position: absolute;
+  right: -17px;
+  bottom: 24px;
+  width: 45px;
+  height: 49px;
+  transform: rotate(13deg);
+  pointer-events: none;
+}
+
+.coaches-caption {
+  margin-top: 30px;
+}
+
+.coaches-names {
+  margin: 0 0 20px;
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.coaches-caption .eyebrow {
+  margin-bottom: 13px;
+}
+
+.coaches-achievements {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--green);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.coaches-achievements li {
+  position: relative;
+  padding: 12px 0 12px 23px;
+}
+
+.coaches-achievements li + li {
+  border-top: 1px solid var(--line);
+}
+
+.coaches-achievements li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 23px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--orange);
+}
+
+@media (min-width: 1101px) {
+  .main-nav {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 850px) {
+  .coaches-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .coaches-heading {
+    padding-top: 0;
+  }
+
+  .coaches-heading h2 {
+    font-size: 36px;
+  }
+
+  .coaches-heading h2 br {
+    display: none;
+  }
+
+  .coaches-heading h2 em {
+    display: block;
+    margin-top: 6px;
+  }
+
+  .coaches-signature {
+    display: none;
+  }
+
+  .coaches-profile {
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 600px) {
+  .coaches-heading h2 {
+    max-width: 380px;
+    font-size: 33px;
+    line-height: 1.25;
+  }
+
+  .coaches-heading h2 em {
+    font-size: 1.45em;
+  }
+
+  .coaches-photo {
+    border-radius: 76px 24px 62px 24px;
+  }
+
+  .coaches-heart {
+    right: -9px;
+    bottom: 21px;
+    width: 34px;
+    height: 37px;
+  }
+
+  .coaches-caption {
+    margin-top: 25px;
+  }
+
+  .coaches-achievements {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .coaches-achievements li {
+    padding: 12px 0 12px 20px;
+  }
+
+  .coaches-achievements li::before {
+    top: 21px;
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media (max-width: 360px) {
+  .coaches-heading h2 {
+    font-size: 30px;
+  }
+}

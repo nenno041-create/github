@@ -1,0 +1,16 @@
+# Local/editor files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+
+# Local deployment output and credentials
+/build/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
